@@ -1,11 +1,16 @@
 ## Cleaner Theme for Obsidian
 
-This small snippet will make the any theme cleaner. It's goal is to remove any unecessary elements and focus only on the notes itself. 
+This small snippet will make the any theme cleaner. It's goal is to remove any unecessary elements and focus only on the notes itself using keyboard shortcurts to interact with Obsidian. 
 
-![Original Obsidian UI](misc/obsidian-ui-original.png)
+![Original Obsidian UI](misc/obsidian-ui-cleaner-comparison.png)
 
-![Theem Cleaner Obsidian UI](misc/obsidian-ui-cleaner.png)
+## Faded elements
+As you can see, some UI elements are just faded, such as the note header and status bar on the bottom. Those will increase their opacity once you mouseover.
 
+## Removing Sidebars
+To interact with the sidebars UI, to have a even more focused view, I recommend to hide those. This can be easily done using the *Toggle Right Sidebar* and *Toggle Left Sidebar* commands that can be found using `ctrl+k` (`cmd+k` on MacOS) shortcurt.
+
+A easier way is to add a keyboard shortcut to activate that command, I recommend using `ctrl+[` to toggle left and `ctrl+]` to toggle right.
 
 ## How to install
 1. Download the Cleaner-Theme.css file
