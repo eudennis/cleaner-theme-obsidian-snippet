@@ -2,6 +2,10 @@
 
 This small snippet will make the any theme cleaner. It's goal is to remove any unecessary elements and focus only on the notes itself. 
 
+![Original Obsidian UI](misc/obsidian-ui-original.png)
+
+![Theem Cleaner Obsidian UI](misc/obsidian-ui-cleaner.png)
+
 
 ## How to install
 1. Download the Cleaner-Theme.css file
