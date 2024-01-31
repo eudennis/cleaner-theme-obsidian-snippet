@@ -37,7 +37,7 @@ opacity: 30%;
 opacity: 100%;
    }
 
-.workspace-ribbon.mod-left.is-collapsed {
+.workspace-ribbon.mod-left {
     display: none;
 }
 .sidebar-toggle-button.mod-right {
@@ -45,4 +45,12 @@ opacity: 100%;
 }
 .workspace-tab-header-tab-list {
     display: none;
+}
+.mod-macos.is-hidden-frameless:not(.is-popout-window) .workspace .workspace-tabs.mod-top-right-space .workspace-tab-header-container {
+    padding-right: 5px;
+
+}
+
+.mod-macos .workspace-tab-header-container {
+    margin-left: 45px;
 }
