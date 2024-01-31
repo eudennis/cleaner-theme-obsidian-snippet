@@ -1,17 +1,25 @@
+/* Change bottom status bar and the note header bar opacity to have 100% only when is hovered */
 .status-bar,.view-header-nav-buttons, .view-header-title-container, .view-actions {
-    opacity: 20%;
+    opacity: 15%;
 }
 .status-bar:hover,.view-header-nav-buttons:hover, .view-header-title-container:hover, .view-actions:hover {
     opacity: 100%;
 }
 
+/* Visual adjustements in the bar to better display. */
 .status-bar {
     border: 0;
     border-radius: 5px;
-    margin-right: 80px;
-    margin-bottom: 10px;
 }
 
+/* Centralize the status-bar */
+.status-bar {
+    margin: 0 auto;
+    position: inherit;
+    right: inherit;
+}
+
+/* Change tabs to a lower opacity when is not active or hovered */
 .workspace-tab-header-new-tab {
     opacity: 20%;
    }
@@ -26,6 +34,7 @@ opacity: 20%;
     opacity: 100%;
    }
    
+
 .workspace-tab-header {
 opacity: 30%;
 }
@@ -34,23 +43,34 @@ opacity: 30%;
    }
 
    .workspace-tab-header.is-active {
-opacity: 100%;
+    opacity: 100%;
    }
 
+/* Remove the left ribbon */
 .workspace-ribbon.mod-left {
     display: none;
 }
-.sidebar-toggle-button.mod-right {
+
+/* Remove the Sidebar toggle buttons (right and left) */
+.sidebar-toggle-button {
     display: none;
 }
 .workspace-tab-header-tab-list {
     display: none;
 }
+
+/* Get the tab selector closer to the right border after removing the right sidebar toggle */
 .mod-macos.is-hidden-frameless:not(.is-popout-window) .workspace .workspace-tabs.mod-top-right-space .workspace-tab-header-container {
     padding-right: 5px;
 
 }
 
+/* Move the tabs header to the left to avoid be under MacOs system buttons after removing the sidebar icon  */
 .mod-macos .workspace-tab-header-container {
     margin-left: 45px;
+}
+
+/* Hide the Scrollbar inside editor */
+.cm-scroller {
+    overflow: hidden;
 }
